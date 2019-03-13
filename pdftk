@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker run --rm -v "${PWD}":/files jottr/alpine-pdftk "$@"
+docker run --rm -u $(id -u):$(id -g) -v "${PWD}":/files jottr/alpine-pdftk "$@"
