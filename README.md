@@ -1,6 +1,19 @@
-[`pdftk`](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit) in docker.
+Lightweight [`pdftk`](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit) in docker, based on Alpine Linux.
 
-To run `docker run --rm -u $(id -u):$(id -g) -v "${PWD}":/files jottr/alpine-pdftk`.  
-For your convenience you can source the `pdftk`-script.  
+Credits to https://github.com/jottr/alpine-pdftk
 
-Added -u option allows for created file to belong to current user instead of root.
+To run:
+
+`docker run --rm -u $(id -u):$(id -g) -v "${PWD}":/files bandaangosta/pdftk:alpine`
+
+For convenience, after cloning this repository, you can link the `pdftk` script to a folder in your PATH:
+
+`sudo ln -s /home/bandaangosta/dev/alpine-pdftk/pdftk /usr/local/bin/pdftk` 
+
+From then on, you can run pdftk as usual.
+
+Adds -u option allows for created file(s) to belong to current user instead of root.
+
+
+
+
