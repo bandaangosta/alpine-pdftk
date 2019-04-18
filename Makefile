@@ -1,4 +1,4 @@
-IMG:=jottr/$$(basename $$(pwd))
+IMG:=bandaangosta/pdftk:alpine
 
 build:
 	docker build -t $(IMG) .

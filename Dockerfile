@@ -1,11 +1,11 @@
-FROM alpine:edge
+FROM alpine:3.8
 
-MAINTAINER github.com/jottr
+LABEL maintainer="bandaangosta <jlortiz@uc.cl>"
 
-RUN apk update && apk upgrade \
-      && apk add pdftk
+RUN apk update && apk upgrade && \
+    apk add pdftk && \
+    mkdir /files
 
-RUN mkdir /files
 WORKDIR /files
 VOLUME ["/files"]
 
