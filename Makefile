@@ -1,4 +1,4 @@
-IMG:=bandaangosta/pdftk:alpine
+IMG:=bandaangosta/pdftk:latest
 
 build:
 	docker build -t $(IMG) .
