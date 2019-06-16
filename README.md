@@ -12,7 +12,7 @@ For convenience, after cloning this repository, you can link the `pdftk` script 
 
 From then on, you can run pdftk as usual.
 
-Adds -u option allows for created file(s) to belong to current user instead of root.
+Added -u option allows for created file(s) to belong to current user instead of root.
 
 
 
